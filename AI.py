@@ -39,7 +39,7 @@ async def image(update: Update, context: CallbackContext) -> None:
 # Основная функция
 def main() -> None:
     # Создание экземпляра ApplicationBuilder и передача токена вашего бота
-    application = ApplicationBuilder().token("6910101448:AAFBqzGJM183Jqx4A_wUjn4FoFSAwYYe9sY").build()
+    application = ApplicationBuilder().token("").build()
     # На разные команды - ответьте в Telegram
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("image", image)) # Добавить обработчик для команды /image
